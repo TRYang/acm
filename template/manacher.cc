@@ -15,6 +15,7 @@ void find_palindrome_substring(char *s, int n) {
   }
 
   //odd length palindrome substring count
+  ptr = -1;
   for (int i = 0; i < n; i++) {
     if (ptr == -1 || ptr + odd_len[ptr] < i) 
       length = 0;
